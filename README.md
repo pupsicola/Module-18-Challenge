@@ -1,2 +1,2 @@
 # Module-18-Challenge
- Responsive recreation of The Elephant Room homepage using HTML and CSS and JS
+ Responsive recreation of The Elephant Room homepage using HTML, CSS, and JS
