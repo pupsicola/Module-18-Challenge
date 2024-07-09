@@ -1,0 +1,361 @@
+h1 {
+font-size: 96px;
+text-align: center;
+}
+
+body {
+  background-color: #661F1F;
+margin: 0;
+font-family: "Crimson Text", serif;
+}
+
+p {
+font-size: 32px;
+text-align: center;
+color:#661F1F;
+}
+
+.heroimagedesktop{
+color:white;
+background-color: #661F1F;
+margin: 0;
+}
+
+.heroimagemobile{
+display: none
+}
+
+.SectionName{
+color:white;
+background-color: #661F1F;
+margin: 0;
+padding-top: 35px;
+padding-bottom:40px;
+letter-spacing: 5px;
+font-weight: bold;
+font-size: 40px;
+}
+
+.headermargin {
+  height: 140px;
+  display: none;
+}
+
+.navigation {
+display: flex;
+flex-direction: row;
+text-align:center;
+background-color:#661F1F;
+padding: 20px;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.logo {
+display: flex;
+justify-content: flex-start;
+}
+
+.headeroptions a {
+display: inline;
+text-decoration: none;
+color: white;
+font-weight: bold;
+font-size: 28px;
+margin: 0 15px;
+align-items: center;
+}
+
+.maincontent {
+margin: 0;
+background-color:#430000;
+padding-top: 1px;
+padding-bottom: 1px;
+}
+
+.card {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas:
+"eventimage eventcontent"
+;
+background-color: white;
+margin: 20px;
+min-height: 500px;
+}
+
+.eventimage {
+    grid-area: eventimage;
+    background-image: url("images/milesdavis.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+.eventcontent {
+    grid-area: eventcontent;
+    padding: 30px;
+    margin: auto;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.eventtitle {
+font-size: 40px;
+font-weight: bold;
+}
+
+.eventagerange {
+color: red;
+}
+
+.presentstext {
+color: grey;
+}
+
+.buyticketsbutton {
+border: black;
+padding: 20px;
+border-style: solid;
+max-width: 123px;
+font-weight: bold;
+font-size: 24px;
+}
+
+
+/*footer*/
+
+footer {
+    text-align:center;
+    color:white;
+    background-color: #661F1F;
+    margin: 0;
+    letter-spacing: 5px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.footercard1 {
+display: inline-block;
+margin-left: 50px;
+margin-right: 50px;
+text-align:left;
+}
+
+.locationhourscontact {
+    letter-spacing: normal;
+    border: 0px;
+    border-top: white;
+    border-style: solid;
+    align-content: center;
+    justify-content: center;
+}
+
+.locationinfo {
+display: inline-block;
+vertical-align: top;
+padding: 20px;
+}
+
+.hoursinfo {
+display: inline-block;
+vertical-align: top;
+padding: 20px;
+}
+
+.contactinfo {
+display: inline-block;
+vertical-align: top;
+padding: 20px;
+}
+    
+.searchbar {
+text-align:left;
+border: white;
+border-style: solid;
+border-radius: 20px;
+width: 300px;
+letter-spacing: normal;
+display: inline-block;
+padding: 20px;
+margin: 50px;
+vertical-align: 50%;
+color: #ffffff90;
+}
+
+.socials {
+width: 250px;
+letter-spacing: normal;
+display: inline-block;
+}
+
+.socialscontainer {
+padding-top: 20px;
+vertical-align: bottom;
+}
+
+.copyright {
+text-align: center;
+letter-spacing: normal;
+margin-bottom: 20px;
+}
+
+/*responsive*/
+
+.hamburgermenu {
+display: none;
+}
+
+#dropDown {
+display: none;
+}
+
+.dropdownmenu{
+display: none;
+text-align: center;
+}
+
+ul {
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+    background-color: white;
+    margin:0;
+    padding: 0;
+    list-style-type:none;
+  }
+li {
+    margin:0;
+    padding: 40px;
+    border-bottom: 3px solid lightgray;
+  }
+#dropDown a {
+    color: black;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1350px) {
+  
+    .logo {
+    display: flex;
+    max-width: 100px;
+    }
+
+    .headermargin {
+      height: 140px;
+      display: block;
+    }
+
+    .dropdownmenu{
+      display: block;
+      align-content: right;
+      margin-top: 140px;
+      width: 100%;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top:0;
+        text-align:center;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        }
+
+    .headeroptions {
+      display: none;
+    }
+
+    .hamburgermenu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 30px;
+        padding: 30px;
+      }
+
+      .heroimagedesktop{
+        display: none;
+        }
+
+      .heroimagemobile{
+          display: initial;
+          color:white;
+          background-color: #661F1F;
+          }
+
+      .card {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "eventimage"
+            "eventcontent";
+        background-color: white;
+        margin: 20px;
+    }
+
+    header {
+    position: fixed;
+    width: 100%;
+    }
+
+    .SectionName{
+      font-size: 36px;
+      }
+    
+    .eventimage {
+      min-height: 400px;
+    }
+
+    .eventtitle {
+      font-size: 32px;
+      font-weight: bold;
+      }
+
+    .eventcontent {
+      grid-area: eventcontent;
+      padding: 30px 15px;
+      margin: none;
+      font-size: 18px;
+  }
+
+  .buyticketsbutton {
+    max-width: 93px;
+    font-weight: bold;
+    font-size: 18px;
+    }
+        
+    footer {
+      display: grid;
+      justify-content: center;
+    }
+
+    .footerlogo {
+      display:none;
+    }
+
+    .locationhourscontact {
+      display: grid;
+      border-top: none;
+      text-align: center;
+      font-size: 24px;
+  }
+
+    .searchbar {
+    display: none;
+    }
+
+    .socials {
+    font-size: 24px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    }
+
+  }
+  
